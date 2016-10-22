@@ -1,7 +1,10 @@
 credit <- read.csv("http://www-bcf.usc.edu/~gareth/ISL/Credit.csv")
 credit <- credit[,-1]
+#After Makefile, use this line
+#credit <- read.csv("data/Credit.csv", header = TRUE)
 
 library(ggplot2)
+library(plyr)
 
 sink('data/eda_sum_stat.txt')
 cat("Summary statistics for Income \n")
@@ -147,6 +150,33 @@ png(filename = "./images/boxplot-balance.png")
 boxplot(credit$Balance, main = "Boxplot for Balance")
 dev.off()
 
+#How to make a frequency table?? Ask
+#Frequency 
+sink('data/eda_frequency.txt')
+cat("Frequency and relative frequency for Income \n")
+IF <- count(credit, "Income")
+IF
+IF$freq / 400
+CF <- count(credit, "Limit")
+CF
+CF$freq / 400
+RF <- count(credit, "Rating")
+RF
+RF$freq / 400
+CaF<- count(credit, "Cards")
+CaF
+CaF$freq / 400
+AF<- count(credit, "Age")
+AF
+AF$freq
+EF<-count(credit, "Education")
+EF
+EF$freq/400
+BF <- count(credit, "Balance")
+BF
+BF$freq /400
+sink()
+
 quantitative_df = credit[,c("Income", "Limit", "Rating", "Cards", "Age", "Education", "Balance")]
 corr_mat <- cor(quantitative_df)
 save(corr_mat, file = "./data/correlation-matrix-quantitative.RData")
@@ -182,3 +212,4 @@ dev.off()
 png(filename = "./images/boxplot-ethnicity.png")
 boxplot(credit$Balance ~ credit$Ethnicity)
 dev.off()
+
