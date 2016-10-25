@@ -132,33 +132,31 @@ png(filename = "./images/boxplot-balance.png")
 boxplot(credit$Balance, main = "Boxplot for Balance")
 dev.off()
 
-#How to make a frequency table?? Ask
 #Frequency 
 sink('data/eda_frequency.txt')
-cat("Frequency and relative frequency for Income \n")
-IF <- count(credit, "Income")
-IF
-IF$freq / 400
-CF <- count(credit, "Limit")
-CF
-CF$freq / 400
-RF <- count(credit, "Rating")
-RF
-RF$freq / 400
-CaF<- count(credit, "Cards")
-CaF
-CaF$freq / 400
-AF<- count(credit, "Age")
-AF
-AF$freq
-EF<-count(credit, "Education")
-EF
-EF$freq/400
-BF <- count(credit, "Balance")
-BF
-BF$freq /400
+cat("Gender Frequency \n")
+genderF <- table(credit$Gender)
+genderRF <- genderF/400
+cbind(genderF, genderRF)
+
+cat("Student Frequency \n")
+studentF <- table(credit$Student)
+studentRF <- studentF/400
+cbind(studentF, studentRF)
+
+cat("Married Frequency \n")
+marriedF <- table(credit$Married)
+marriedRF <- marriedF/400
+cbind(marriedF, marriedRF)
+
+cat("Ethnicity Frequency \n")
+ethnicityF <- table(credit$Ethnicity)
+ethnicityRF <- ethnicityF/400
+cbind(ethnicityF, ethnicityRF)
+
 sink()
 
+# Making Qualitative Variable Information Tables
 quantitative_df = credit[,c("Income", "Limit", "Rating", "Cards", "Age", "Education", "Balance")]
 corr_mat <- cor(quantitative_df)
 save(corr_mat, file = "./data/correlation-matrix-quantitative.RData")
