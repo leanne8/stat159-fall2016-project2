@@ -18,7 +18,10 @@ testAndTrain:  code/scripts/training-and-testing.R
 #Save session info information
 session-info: code/scripts/session-info-script.R
 	Rscript code/scripts/session-info-script.R
-	
+
+#OLS Regression
+regression: 
+	Rscript code/scripts/ols.R
 #Generate pdf report
 #report: report/report.Rmd
 #	Rscript -e 'library(rmarkdown); render("report/report.Rmd")'
