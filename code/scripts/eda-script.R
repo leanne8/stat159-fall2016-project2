@@ -1,7 +1,6 @@
 credit <- read.csv("data/Credit.csv", header = TRUE)
 
 library(ggplot2)
-library(plyr)
 
 sink('data/eda_sum_stat.txt')
 cat("Summary statistics for Income \n")
@@ -133,7 +132,7 @@ boxplot(credit$Balance, main = "Boxplot for Balance")
 dev.off()
 
 #Frequency 
-sink('data/eda_frequency.txt')
+sink('data/eda-frequency.txt')
 cat("Gender Frequency \n")
 genderF <- table(credit$Gender)
 genderRF <- genderF/400
@@ -169,7 +168,7 @@ dev.off()
 #quantitative
 qualitative_df = credit[, c("Gender", "Student", "Married", "Ethnicity")]
 
-sink('data/eda_sum_stat.txt')
+sink('data/eda-sum-stat.txt')
 cat("Anova for Gender \n")
 aov(credit$Balance ~ credit$Gender)
 cat("Anova for Student \n")

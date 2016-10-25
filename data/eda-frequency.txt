@@ -1,20 +1,16 @@
 Gender Frequency 
-
        genderF genderRF
  Male      193   0.4825
 Female     207   0.5175
 Student Frequency 
-
     studentF studentRF
 No       360       0.9
 Yes       40       0.1
 Married Frequency 
-
     marriedF marriedRF
 No       155    0.3875
 Yes      245    0.6125
 Ethnicity Frequency 
-
                  ethnicityF ethnicityRF
 African American         99      0.2475
 Asian                   102      0.2550
