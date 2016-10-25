@@ -13,5 +13,6 @@ train_set <- scaled_credit[train, ]
 
 test_set <- scaled_credit[!(1:400 %in% train), ]
 
-#save it as RData file
-save(train_set, test_set, file = "./data/train-test-sets.RData")
+#save the training and testing sets into csv
+write.csv(trainSet, file = "data/trainSet.csv")
+write.csv(testSet, file = "data/testSet.csv")

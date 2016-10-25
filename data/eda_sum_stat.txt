@@ -1,0 +1,44 @@
+Anova for Gender 
+Call:
+   aov(formula = credit$Balance ~ credit$Gender)
+
+Terms:
+                credit$Gender Residuals
+Sum of Squares          38892  84301020
+Deg. of Freedom             1       398
+
+Residual standard error: 460.23
+Estimated effects may be unbalanced
+Anova for Student 
+Call:
+   aov(formula = credit$Balance ~ credit$Student)
+
+Terms:
+                credit$Student Residuals
+Sum of Squares         5658372  78681540
+Deg. of Freedom              1       398
+
+Residual standard error: 444.626
+Estimated effects may be unbalanced
+Anova for Married 
+Call:
+   aov(formula = credit$Balance ~ credit$Married)
+
+Terms:
+                credit$Married Residuals
+Sum of Squares            2715  84337197
+Deg. of Freedom              1       398
+
+Residual standard error: 460.3287
+Estimated effects may be unbalanced
+Anova for Ethnicity 
+Call:
+   aov(formula = credit$Balance ~ credit$Ethnicity)
+
+Terms:
+                credit$Ethnicity Residuals
+Sum of Squares             18454  84321458
+Deg. of Freedom                2       397
+
+Residual standard error: 460.8651
+Estimated effects may be unbalanced

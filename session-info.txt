@@ -1,0 +1,29 @@
+[1] "ggplot"
+[1] "xtable"
+[1] "stats"
+[1] "graphics"
+[1] "grDevices"
+[1] "utils"
+[1] "datasets"
+[1] "methods"
+[1] "base"
+[1] "testthat"
+[1] "rmarkdown"
+R version 3.2.2 (2015-08-14)
+Platform: x86_64-apple-darwin13.4.0 (64-bit)
+Running under: OS X 10.10.5 (Yosemite)
+
+locale:
+[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+
+attached base packages:
+[1] methods   stats     graphics  grDevices utils     datasets  base     
+
+other attached packages:
+[1] rmarkdown_0.8  testthat_1.0.2 xtable_1.8-2   ggplot2_2.1.0 
+
+loaded via a namespace (and not attached):
+ [1] colorspace_1.2-6 scales_0.3.0     magrittr_1.5     R6_2.1.1        
+ [5] plyr_1.8.3       htmltools_0.3.5  gtable_0.1.2     memoise_1.0.0   
+ [9] crayon_1.3.1     Rcpp_0.12.1      grid_3.2.2       digest_0.6.8    
+[13] munsell_0.4.2   

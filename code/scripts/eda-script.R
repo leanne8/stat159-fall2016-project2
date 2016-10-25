@@ -1,7 +1,4 @@
-credit <- read.csv("http://www-bcf.usc.edu/~gareth/ISL/Credit.csv")
-credit <- credit[,-1]
-#After Makefile, use this line
-#credit <- read.csv("data/Credit.csv", header = TRUE)
+credit <- read.csv("data/Credit.csv", header = TRUE)
 
 library(ggplot2)
 library(plyr)
@@ -105,45 +102,30 @@ png(filename = "./images/boxplot-ed.png")
 boxplot(credit$Education, main = "Boxplot for Education")
 dev.off()
 
-#Gender Graphs
-png(filename = "./images/hist-gender.png")
-ggplot(credit, aes(x = Gender)) + geom_histogram(binwidth=7, colour = "blue") + ggtitle("Histogram for Gender")
-dev.off()
 
+#Gender Boxplot
 png(filename = "./images/boxplot-gender.png")
-boxplot(credit$Gender, main = "Boxplot for Gender")
+boxplot(Balance ~ Gender, data = credit, main = "Boxplot for Gender")
 dev.off()
 
-#Student Graphs
-png(filename = "./images/hist-student.png")
-ggplot(credit, aes(x = student)) + geom_histogram(binwidth=7, colour = "blue") + ggtitle("Histogram for Student")
-dev.off()
-
+#Student Boxplot
 png(filename = "./images/boxplot-student.png")
-boxplot(credit$Student, main = "Boxplot for Student")
+boxplot(Balance ~ Student, data = credit, main = "Boxplot for Student")
 dev.off()
 
-#Married Graphs
-png(filename = "./images/hist-married.png")
-ggplot(credit, aes(x = Married)) + geom_histogram(binwidth=7, colour = "blue") + ggtitle("Histogram for Married")
-dev.off()
-
+#Married Boxplot
 png(filename = "./images/boxplot-married.png")
-boxplot(credit$Married, main = "Boxplot for Married")
+boxplot(Balance ~ Married, data = credit, main = "Boxplot for Married")
 dev.off()
 
-#Ethnicity Graphs
-png(filename = "./images/hist-ethnicity.png")
-ggplot(credit, aes(x = Ethnicity)) + geom_histogram(binwidth=7, colour = "blue") + ggtitle("Histogram for Ethnicity")
-dev.off()
-
+#Ethnicity Boxplot
 png(filename = "./images/boxplot-ethnicity.png")
-boxplot(credit$Ethnicity, main = "Boxplot for Ethnicity")
+boxplot(Balance ~ Ethnicity, data = credit, main = "Boxplot for Ethnicity")
 dev.off()
 
 #Balance Graphs
 png(filename = "./images/hist-balance.png")
-ggplot(credit, aes(x = Balance)) + geom_histogram(binwidth=7, colour = "blue") + ggtitle("Histogram for Balance")
+ggplot(credit, aes(x = Balance)) + geom_histogram(binwidth=10, colour = "blue") + ggtitle("Histogram for Balance")
 dev.off()
 
 png(filename = "./images/boxplot-balance.png")
