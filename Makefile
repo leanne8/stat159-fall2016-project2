@@ -18,7 +18,26 @@ testAndTrain:  code/scripts/training-and-testing.R
 #Save session info information
 session-info: code/scripts/session-info-script.R
 	Rscript code/scripts/session-info-script.R
-	
+
+ols: 
+  Rscript code/functions/ols.R
+
+ridge:
+  Rscript code/functions/ridge.R
+
+lasso: 
+  Rscript code/functions/lasso.R
+
+pcr:
+  Rscript code/functions/pcr.R
+
+plsr: 
+  Rscript code/functions/plsr.R
+  
+#Regression script
+regression: 
+  Rscript code/functions/regression-script.R
+
 #Generate pdf report
 #report: report/report.Rmd
 #	Rscript -e 'library(rmarkdown); render("report/report.Rmd")'
