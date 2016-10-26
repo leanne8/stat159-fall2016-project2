@@ -79,7 +79,7 @@ The rule for the target regressions should be written like this:
 ## License
 MIT License
 
-Copyright (c) [year] [fullname]
+Copyright (c) [2016] [Leanne Lee, Eranda Bregasi]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
