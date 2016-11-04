@@ -40,7 +40,7 @@ fullFit <- glmnet(fullx, fully, lambda = RidgeBest, intercept = FALSE,
 ridgeFitcoef <- coef(fullFit, s = RidgeBest)
 
 #Save Ridge model in binary data
-save(ridgeCV, RidgeBest, RidgeMSE, ridgeFitcoef, file = "data/ridge.RData")
+save(ridgeCV, RidgeBest, ridgeMSE, ridgeFitcoef, file = "data/ridge.RData")
 
 
 # Sinking output to txt file
