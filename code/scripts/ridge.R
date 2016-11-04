@@ -26,7 +26,6 @@ dev.off()
 # Use test set to compute the test Mean Square Error (test MSE)
 testx <- as.matrix(testSet[,3:13])
 testy <- as.matrix(testSet[,14])
-ridgePred = predict(ridgeCV, testx, s = RidgeBest)
 
 # Calculating the MSE
 ridgeP <- predict(ridgeCV,testx, s = RidgeBest)
