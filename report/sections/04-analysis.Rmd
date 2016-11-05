@@ -8,6 +8,7 @@ output: pdf_document
 library(xtable)
 library(readr)
 library(Matrix)
+options(xtable.floating = FALSE)
 load('../../data/ols.RData')
 load('../../data/ridge.RData')
 load('../../data/lasso.RData')
@@ -30,25 +31,41 @@ The ordinary least squares regression MSE is 0.044683.
 ```{r,echo=FALSE,results='asis'}
 ridgeTable = as.matrix(ridgeFitcoef)
 print(xtable(ridgeTable), comment = FALSE,type = 'latex')
+ridgeMSE
 ```
+
+The ridge regression MSE is 0.0525927.
+When comparing the ridge regression with OLS, the results are similar.
 
 ## Lasso 
 
 ```{r,echo=FALSE,results='asis'}
 lassoTable = as.matrix(LassoFitcoef)
 print(xtable(ridgeTable), comment = FALSE,type = 'latex')
+lassoMSE
 ```
+
+The lasso regression MSE is 0.05154446
+The lasso regression and ridge regression have the same results.
 
 ## Principal Components Regression
 
 ```{r,echo=FALSE,results='asis'}
 pcrTable = as.matrix(pcrFitCoef)
 print(xtable(pcrTable), comment = FALSE,type = 'latex')
+pcrMSE
 ```
+
+The PCR MSE is 0.05199678.
+The PCR coefficients and OLS coefficients are similar. They also shared the similar results with ridge regression. 
 
 ## Partial Least Squares Regression
 
 ```{r,echo=FALSE,results='asis'}
 plsrTable = as.matrix(plsrFitCoef)
 print(xtable(plsrTable), comment = FALSE,type = 'latex')
+plsrMSE
 ```
+
+The PLSR MSE is 0.0517916.
+The PLSR coefficients have some difference from PCR. When comparing with second and third components, PCR and PLSR have different results. The majority others remains the same. 
