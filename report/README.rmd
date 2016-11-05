@@ -1,8 +1,8 @@
-##The Report file contains two .rmd files 
+#The Report file contains two .rmd files 
 	* README.rmd
 	* report.rmd
 
-#It also contains a subdirectory named "sections, which has the following files: 
+##It also contains a subdirectory named "sections, which has the following files: 
 
 	* 1. 00-abstract.rmd -- describes the abstract of our project, which consists of a pre-introduction of what is contained in the whole project. States the kind of linear regression models that we used for our analysis. 
 
