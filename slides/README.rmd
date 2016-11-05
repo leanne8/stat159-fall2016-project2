@@ -1,0 +1,1 @@
+Slides is a presentation of our work. Includes an informative summary of each of the sections of our project.
