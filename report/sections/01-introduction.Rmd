@@ -1,0 +1,10 @@
+---
+title: "01-introduction"
+output: pdf_document
+---
+#Introduction
+
+   In this project we focus on the five regressions learned such as Least-Squares regression, Ridge regression, Lasso regression, Principal Component regression, and Partial Least-Squares regression. We approach the project by considering these types of regression, so that we can compare them for the simple purpose of improving the accuracy of the predicion of the linear model in this case. By using other models this will make the coefficient of the other variables equal to zero and during our analysis, the whole process will be more efficient because there will be less variables to interpret and easier visually. 
+   
+Another reason to use different kind of methods is that not every variable is connected with the response variable. To avoid using least-square method, we use other models that will set the coeff. equal to zero and making our analysis easier to interpret. Other methods include ridge, lasso, partial least square and principal component. They would all go towards the same value but the way to reach that would be different depending on method. 
+
