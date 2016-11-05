@@ -9,11 +9,11 @@ library(xtable)
 library(readr)
 library(Matrix)
 options(xtable.floating = FALSE)
-load('../../data/ols.RData')
-load('../../data/ridge.RData')
-load('../../data/lasso.RData')
-load('../../data/pcr.RData')
-load('../../data/plsr.RData')
+load('./data/ols.RData')
+load('./data/ridge.RData')
+load('./data/lasso.RData')
+load('./data/pcr.RData')
+load('./data/plsr.RData')
 ```
 
 ## OLS

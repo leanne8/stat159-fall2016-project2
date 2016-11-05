@@ -1,7 +1,7 @@
 #declare phony targets
 .PHONY: all data tests eda ols ridge lasso pcr plsr regressions report slides session clean testAndTrain
 
-all: eda ols report session-info data testAndTrain
+all: eda ols report session-info data testAndTrain slides ols ridge lasso pcr plsr regression 
 
 #import data into the data folder (Run this line first to import)
 data:
@@ -20,27 +20,32 @@ session-info: code/scripts/session-info-script.R
 	Rscript code/scripts/session-info-script.R
 
 ols: 
-  Rscript code/functions/ols.R
+	Rscript code/scripts/ols.R
 
 ridge:
-  Rscript code/functions/ridge.R
+	Rscript code/scripts/ridge.R
 
 lasso: 
-  Rscript code/functions/lasso.R
+	Rscript code/scripts/lasso.R
 
 pcr:
-  Rscript code/functions/pcr.R
+	Rscript code/scripts/pcr.R
 
 plsr: 
-  Rscript code/functions/plsr.R
+	Rscript code/scripts/plsr.R
   
 #Regression script
 regression: 
-  Rscript code/functions/regression-script.R
+	Rscript code/functions/regression-script.R
 
 #Generate pdf report
-#report: report/report.Rmd
-#	Rscript -e 'library(rmarkdown); render("report/report.Rmd")'
+report: report/sections/*.Rmd
+	cat report/sections/*.Rmd > report.Rmd; 
+	Rscript -e "library(rmarkdown); render('report.Rmd','pdf_document')";
+
+#slides:
+slides: slides/slides.Rmd
+	Rscript -e "library(rmarkdown); render('slides/slides.Rmd')";
 
 #clean the target
 clean:

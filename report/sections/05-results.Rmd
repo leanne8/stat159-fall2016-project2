@@ -7,9 +7,9 @@ From the analysis, we can see that the MSE are similar to each other. The OLS ha
 
 In the Lasso Regression, the Education, Gender female, Ethnicity Asian and Ethnicity Caucasian, Married Yes are 0 for the coefficient. The regression is trying to minimize the predictors.
 
-![Ridge Cross Validation Plot](../../images/ridgeCV.png)
+![Ridge Cross Validation Plot](./images/ridgeCV.png)
 
-![Lasso Cross Validation Plot](../../images/lassoCV.png)
+![Lasso Cross Validation Plot](./images/lassoCV.png)
 
 When comparing the cross validation on both ridge and lasso, lasso cross validation is less consistent than ridge cross validation.
 
