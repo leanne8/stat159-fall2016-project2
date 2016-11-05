@@ -1,5 +1,6 @@
 ---
-title: "00-abstract"
+title: "Project 2 "
+author: "Leanne Lee and Eranda Bregasi"
 output: pdf_document
 ---
 
