@@ -24,7 +24,7 @@ print(olsTable, comment=FALSE, type = "latex")
 olsMSE
 ```
 
-The ordinary least squares regression MSE is 0.044683. 
+The ordinary least squares regression MSE is 0.04478619. 
 
 ## Ridge 
 
