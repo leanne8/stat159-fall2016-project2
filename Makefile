@@ -45,7 +45,7 @@ report: report/sections/*.Rmd
 
 #slides:
 slides: slides/slides.Rmd
-	Rscript -e "library(rmarkdown); render('slides/slides.Rmd')";
+	Rscript -e "library(rmarkdown); render('slides/slides.Rmd','html_document')";
 
 #clean the target
 clean:

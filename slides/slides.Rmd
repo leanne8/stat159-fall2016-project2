@@ -1,7 +1,7 @@
 ---
 title: "Project 2 slides"
 author: "Leanne Lee and Eranda Bregasi"
-output: pdf_document
+output: html_document
 ---
 #Introduction
 
