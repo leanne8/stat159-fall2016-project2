@@ -1,0 +1,42 @@
+Summary statistics for Income 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  10.35   21.01   33.12   45.22   57.47  186.60 
+[1]  10.354 186.634
+[1] 36.4635
+[1] 35.24427
+Summary statistics for Limit 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+    855    3088    4622    4736    5873   13910 
+[1]   855 13913
+[1] 2784.75
+[1] 2308.199
+Summary statistics for Rating 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   93.0   247.2   344.0   354.9   437.2   982.0 
+[1]  93 982
+[1] 190
+[1] 154.7241
+Summary statistics for Cards 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   2.000   3.000   2.958   4.000   9.000 
+[1] 1 9
+[1] 2
+[1] 1.371275
+Summary statistics for Age 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  23.00   41.75   56.00   55.67   70.00   98.00 
+[1] 23 98
+[1] 28.25
+[1] 17.24981
+Summary statistics for Education 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   5.00   11.00   14.00   13.45   16.00   20.00 
+[1]  5 20
+[1] 5
+[1] 3.125207
+Summary statistics for Balance 
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   0.00   68.75  459.50  520.00  863.00 1999.00 
+[1]    0 1999
+[1] 794.25
+[1] 459.7589
