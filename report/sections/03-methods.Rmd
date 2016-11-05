@@ -1,22 +1,34 @@
 ---
 title: "03-methods"
-author: "Leanne Lee"
 date: "November 4, 2016"
 output: pdf_document
 ---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+#Methods
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+### Ordinary Least Squares Regression
+Apply multiple linear regression by using the **lm()** function to find the relationship between Balnace and the 11 predictors of Income, Limit, Rating and more. 
 
-```{r}
-summary(cars)
-```
+$$Result = \beta_{0}+\beta_{1} * Income + \beta_{2}*Limit + \beta_{3}*Rating + \dots + \beta_{10}*EthnicityCaucasian $$
 
-You can also embed plots, for example:
+### Shrinkage Methods
 
-```{r, echo=FALSE}
-plot(cars)
-```
+### Ridge regression
+Ridge regression is similar to OLS with the coefficients estimated by minimizing a slightly different quantity.By minimzing RSS, we can find the coefficient estimates that fit the data well.
+$$\sum_{i=1}^{n}(y_i-\beta_0-\sum_{j=1}^{p}\beta_jx_{ij})^2+\lambda\sum_{j=1}^{p}\beta_j^2 = RSS + \lambda\sum_{j=1}^{p}\beta_j^{2}$$
+However, the shrinkage penalty is that $\lambda\sum_{j=1}^{p}\beta_j^{2}$ is small when $\beta$ are close to zero. Ridge regression will produce a different set of coefficient estimates for each value of $\lambda$ .
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## Lasso regression
+Lasso also minimize the quantity by the following:
+$$\sum_{i=1}^{n}(y_i-\beta_0-\sum_{j=1}^{p}\beta_jx_{ij})^2+\lambda\sum_{j=1}^{p}|\beta_j| = RSS + \lambda\sum_{j=1}^{p}|\beta_j|$$
+Lasso also shrink the coefficient estimates to zero. However, the penalty has the effect of focing some of the coefficient estimates to equal to zero when the tuning pararmeter is too large. Thus, lasso is better on feature selection.
+
+##Dimension Reduction Methods
+
+### Principal Components regression (PCR)
+In principal compoenents regression, the method is construct $Z_1 + \dots + Z_{M*}$ and then use these components as the predictors in a linear regression model. With the small amount of principal components, it can explain the variability of the data. PCR performs well when the first few principal components have enough information on the variation in the predictors and relationship with the response. The response does not supervise the principal components.
+
+### Partial Least Squares regression (PLSR)
+Partial Least Square is a supervised way of PCR. PLS is a dimension reduction method and fits a linear model through least square using $Z_1 + \dots + Z_{M*}$ . PLS also make use of response Y to identify new features. PLS will try to find ways to explain the trend and pattern of reponse and predictor variables.
+
+##### Credit to An Introduction to Statistical Learning
