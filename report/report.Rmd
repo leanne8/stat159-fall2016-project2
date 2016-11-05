@@ -7,11 +7,7 @@ output: pdf_document
 
 This report aims to find a predictive modelling process for the Credit balance. The data analysis focuses on ten different factors that could influence credit card balance. We use five different models of regression such as exploratory data analysis, pre-modeling data processing and multiple linear regression models in order to make a decision on which of the methods is the best predictor for the balance in terms of ten predictors such as Income, Age, Education, Gender and others. 
 
- 
----
-title: "01-introduction"
-output: pdf_document
----
+
 #Introduction
 
    In this project we focus on the five regressions learned such as Least-Squares regression, Ridge regression, Lasso regression, Principal Component regression, and Partial Least-Squares regression. We approach the project by considering these types of regression, so that we can compare them for the simple purpose of improving the accuracy of the predicion of the linear model in this case. By using other models this will make the coefficient of the other variables equal to zero and during our analysis, the whole process will be more efficient because there will be less variables to interpret and easier visually. 
@@ -20,19 +16,11 @@ Another reason to use different kind of methods is that not every variable is co
 
 Before running any kind of regression in the dataset, we first focus on the exploratory data analysis by observing and reproducing mediums of visualization like statistical diagrams, histograms, graphs. This could affect on our ability to evaluate each regression's performance. 
 
-The reproducibility and collaborativeness included in the project is vital not only to an eloquent flow of our progress but also on the results we get at the end. Just like we were able to analyse, produce and observe patterns in our project, other users may find this helpful and contribute to the advancement of project in the future. This comes as a result of  collaborative efforts from both parts. ---
-title: "02-data"
-output: pdf_document
----
+The reproducibility and collaborativeness included in the project is vital not only to an eloquent flow of our progress but also on the results we get at the end. Just like we were able to analyse, produce and observe patterns in our project, other users may find this helpful and contribute to the advancement of project in the future. This comes as a result of  collaborative efforts from both parts. 
 
 The variables used in this dataset are qualitative {Gender, Student, Married, and Ethnicity} and quantative {Income, Limit, Rating, Cards, Age, Education, and Balance}. We are using data that originated from Credit.csv. The quantitative variables in this are labeled as age, cards, education, income, limit, rating, and balance. These variables are one's age, the no. of credit cards one has, years of education, income in dollars, credit limit, credit rating, and one's average credit card debt. Balance is the response variable.  
 
 One important part of our job was to standardize all of the data for a more comprehensibile and easier approach. For our analysis, based on the Credit.csv, we created scaled-credit.csv, which has the same variables as the original file. However, not every content is the same since we can still make changes to scaled-credit.csv, especially depending to the scale variables are measured in this case. 
----
-title: "03-methods"
-date: "November 4, 2016"
-output: pdf_document
----
 
 #Methods
 
@@ -61,10 +49,8 @@ In principal compoenents regression, the method is construct $Z_1 + \dots + Z_{M
 ### Partial Least Squares regression (PLSR)
 Partial Least Square is a supervised way of PCR. PLS is a dimension reduction method and fits a linear model through least square using $Z_1 + \dots + Z_{M*}$ . PLS also make use of response Y to identify new features. PLS will try to find ways to explain the trend and pattern of reponse and predictor variables.
 
-##### Credit to An Introduction to Statistical Learning---
-title: "04-analysis"
-output: pdf_document
----
+##### Credit to An Introduction to Statistical Learning
+
 #Analysis
 
 ```{r}
@@ -132,10 +118,7 @@ plsrMSE
 
 The PLSR MSE is 0.0517916.
 The PLSR coefficients have some difference from PCR. When comparing with second and third components, PCR and PLSR have different results. The majority others remains the same. 
----
-title: "05-results"
-output: pdf_document
----
+
 
 From the analysis, we can see that the MSE are similar to each other. The OLS has the smallest MSE, which is the best fit model for the credit data set. The ridge regression has the largest MSE among the five regression, which is the least efficient model. From the tables above, most of the coefficients are similar except for PLSR. 
 
@@ -146,12 +129,6 @@ In the Lasso Regression, the Education, Gender female, Ethnicity Asian and Ethni
 ![Lasso Cross Validation Plot](../images/lassoCV.png)
 
 When comparing the cross validation on both ridge and lasso, lasso cross validation is less consistent than ridge cross validation.
-
-
----
-title: "06-conclusions"
-output: pdf_document
----
 
 # Conclusions
 This project uses five regression model to determine the best fit model for the Credit dataset. Based on the result, the OLS perform the best among all the models. The second best is the lasso regression. However, the MSE among all models are very similar and they shared similar coefficients. That means none of the models is far off from the rest. 
