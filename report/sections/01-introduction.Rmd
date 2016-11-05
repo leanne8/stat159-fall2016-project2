@@ -8,3 +8,6 @@ output: pdf_document
    
 Another reason to use different kind of methods is that not every variable is connected with the response variable. To avoid using least-square method, we use other models that will set the coeff. equal to zero and making our analysis easier to interpret. Other methods include ridge, lasso, partial least square and principal component. They would all go towards the same value but the way to reach that would be different depending on method. 
 
+Before running any kind of regression in the dataset, we first focus on the exploratory data analysis by observing and reproducing mediums of visualization like statistical diagrams, histograms, graphs. This could affect on our ability to evaluate each regression's performance. 
+
+The reproducibility and collaborativeness included in the project is vital not only to an eloquent flow of our progress but also on the results we get at the end. Just like we were able to analyse, produce and observe patterns in our project, other users may find this helpful and contribute to the advancement of project in the future. This comes as a result of  collaborative efforts from both parts. 
