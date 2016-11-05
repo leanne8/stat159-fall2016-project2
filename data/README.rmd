@@ -1,6 +1,6 @@
-##DATA folder 
+#DATA folder 
 
-#output results 
+##output results 
 	* ridge-output.txt
 	* eda-sum-stat.txt
 	* lasso-output.txt
@@ -8,12 +8,12 @@
 	* pcr-output.txt
 	* plsr-output.txt
 
-#data sets
+##data sets
 	* scaled-credit.csv
 	* test-set.csv
 	* train-set.csv
 
-#binary files
+##binary files
 	* lasso.RData
 	* ols.RData
 	* pcr.RData
