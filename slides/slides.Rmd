@@ -1,0 +1,16 @@
+---
+title: "slides"
+output: pdf_document
+---
+#Introduction
+
+The aim of this statistical analysis project is to compare different kind of linear regression models for the Balance variable in credit data. Such linear regressions are: 
+
+1. Principal Component Regression
+2. Lasso 
+3. Ridge
+4. Ordinary Least Squared
+5. Partial Least Squared Regression
+
+#Data
+
