@@ -1,0 +1,10 @@
+---
+title: "00-abstract"
+output: pdf_document
+---
+
+#Abstract
+
+This report aims to find a predictive modelling process for the Credit balance. The data analysis focuses on ten different factors that could influence credit card balance. We use five different models of regression such as exploratory data analysis, pre-modeling data processing and multiple linear regression models in order to make a decision on which of the methods is the best predictor for the balance in terms of ten predictors such as Income, Age, Education, Gender and others. 
+
+ 
