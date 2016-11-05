@@ -1,0 +1,8 @@
+---
+title: "02-data"
+output: pdf_document
+---
+
+The variables used in this dataset are qualitative {Gender, Student, Married, and Ethnicity} and quantative {Income, Limit, Rating, Cards, Age, Education, and Balance}. We are using data that originated from Credit.csv. The quantitative variables in this are labeled as age, cards, education, income, limit, rating, and balance. These variables are one's age, the no. of credit cards one has, years of education, income in dollars, credit limit, credit rating, and one's average credit card debt. Balance is the response variable.  
+
+One important part of our job was to standardize all of the data for a more comprehensibile and easier approach. For our analysis, based on the Credit.csv, we created scaled-credit.csv, which has the same variables as the original file. However, not every content is the same since we can still make changes to scaled-credit.csv, especially depending to the scale variables are measured in this case. 
