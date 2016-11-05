@@ -7,7 +7,7 @@ trainSet = as.matrix(read.csv("data/train-set.csv"))[,-1]
 testSet = as.matrix(read.csv("data/test-set.csv"))[,-1]
 
 #Set Random seeds
-set.seed(12345)
+set.seed(123)
 
 #Run train set using ten-fold cross-validation
 grid = 10^seq(10, -2, length = 100)

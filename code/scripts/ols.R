@@ -1,4 +1,4 @@
-scaledCreditA = as.matrix(read.csv("data/scaled-credit.csv")) [,2:14]
+scaledCreditA = as.matrix(read.csv("data/scaled-credit.csv")) [,3:13]
 scaledCreditB = as.matrix(read.csv("data/scaled-credit.csv")) [,14]
 
 #Fit the ols regression 

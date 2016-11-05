@@ -41,7 +41,7 @@ When comparing the ridge regression with OLS, the results are similar.
 
 ```{r,echo=FALSE,results='asis'}
 lassoTable = as.matrix(LassoFitcoef)
-print(xtable(ridgeTable), comment = FALSE,type = 'latex')
+print(xtable(lassoTable), comment = FALSE,type = 'latex')
 lassoMSE
 ```
 

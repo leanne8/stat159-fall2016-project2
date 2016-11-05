@@ -5,44 +5,41 @@ lm(formula = scaledCreditB ~ scaledCreditA)
 
 Residuals:
      Min       1Q   Median       3Q      Max 
--0.36210 -0.16882 -0.03125  0.12226  0.68844 
+-0.35157 -0.16900 -0.02935  0.11741  0.69210 
 
 Coefficients:
                                   Estimate Std. Error t value Pr(>|t|)    
-(Intercept)                      8.219e-16  1.075e-02   0.000   1.0000    
-scaledCreditAX                   1.032e-02  1.092e-02   0.945   0.3452    
-scaledCreditAIncome             -5.985e-01  1.796e-02 -33.321  < 2e-16 ***
-scaledCreditALimit               9.565e-01  1.646e-01   5.811  1.3e-08 ***
-scaledCreditARating              3.845e-01  1.652e-01   2.327   0.0205 *  
-scaledCreditACards               5.320e-02  1.295e-02   4.107  4.9e-05 ***
-scaledCreditAAge                -2.362e-02  1.105e-02  -2.138   0.0332 *  
-scaledCreditAEducation          -7.466e-03  1.086e-02  -0.687   0.4924    
-scaledCreditAGenderFemale       -1.039e-02  1.087e-02  -0.956   0.3396    
-scaledCreditAStudentYes          2.784e-01  1.093e-02  25.472  < 2e-16 ***
-scaledCreditAMarriedYes         -9.316e-03  1.100e-02  -0.847   0.3976    
-scaledCreditAEthnicityAsian      1.600e-02  1.340e-02   1.194   0.2333    
-scaledCreditAEthnicityCaucasian  1.012e-02  1.333e-02   0.759   0.4483    
+(Intercept)                      8.236e-16  1.074e-02   0.000   1.0000    
+scaledCreditAIncome             -5.982e-01  1.796e-02 -33.314  < 2e-16 ***
+scaledCreditALimit               9.584e-01  1.646e-01   5.824 1.21e-08 ***
+scaledCreditARating              3.825e-01  1.652e-01   2.315   0.0211 *  
+scaledCreditACards               5.286e-02  1.295e-02   4.083 5.40e-05 ***
+scaledCreditAAge                -2.303e-02  1.103e-02  -2.088   0.0374 *  
+scaledCreditAEducation          -7.469e-03  1.086e-02  -0.688   0.4921    
+scaledCreditAGenderFemale       -1.159e-02  1.079e-02  -1.075   0.2832    
+scaledCreditAStudentYes          2.782e-01  1.093e-02  25.459  < 2e-16 ***
+scaledCreditAMarriedYes         -9.054e-03  1.099e-02  -0.824   0.4107    
+scaledCreditAEthnicityAsian      1.595e-02  1.340e-02   1.190   0.2347    
+scaledCreditAEthnicityCaucasian  1.101e-02  1.330e-02   0.828   0.4083    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-Residual standard error: 0.2149 on 387 degrees of freedom
-Multiple R-squared:  0.9552,	Adjusted R-squared:  0.9538 
-F-statistic: 687.7 on 12 and 387 DF,  p-value: < 2.2e-16
+Residual standard error: 0.2149 on 388 degrees of freedom
+Multiple R-squared:  0.9551,	Adjusted R-squared:  0.9538 
+F-statistic: 750.3 on 11 and 388 DF,  p-value: < 2.2e-16
 
 OLS coefficients
-                    (Intercept)                  scaledCreditAX 
-                   8.218739e-16                    1.032214e-02 
-            scaledCreditAIncome              scaledCreditALimit 
-                  -5.985009e-01                    9.565035e-01 
-            scaledCreditARating              scaledCreditACards 
-                   3.844851e-01                    5.319873e-02 
-               scaledCreditAAge          scaledCreditAEducation 
-                  -2.362012e-02                   -7.465745e-03 
-      scaledCreditAGenderFemale         scaledCreditAStudentYes 
-                  -1.038833e-02                    2.784291e-01 
-        scaledCreditAMarriedYes     scaledCreditAEthnicityAsian 
-                  -9.315884e-03                    1.600130e-02 
-scaledCreditAEthnicityCaucasian 
-                   1.011880e-02 
+                    (Intercept)             scaledCreditAIncome 
+                   8.236405e-16                   -5.981715e-01 
+             scaledCreditALimit             scaledCreditARating 
+                   9.584387e-01                    3.824789e-01 
+             scaledCreditACards                scaledCreditAAge 
+                   5.286497e-02                   -2.303340e-02 
+         scaledCreditAEducation       scaledCreditAGenderFemale 
+                  -7.469459e-03                   -1.159309e-02 
+        scaledCreditAStudentYes         scaledCreditAMarriedYes 
+                   2.781549e-01                   -9.054196e-03 
+    scaledCreditAEthnicityAsian scaledCreditAEthnicityCaucasian 
+                   1.595067e-02                    1.100529e-02 
 OLS MSE
-[1] 0.04468304
+[1] 0.04478619

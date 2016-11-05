@@ -4,7 +4,7 @@ output: pdf_document
 ---
 
 # Conclusions
-This project uses five regression model to determine the best fit model for the Credit dataset. Based on the result, the OLS perform the best among all the models. However, the MSE among all models are very similar and they shared similar coefficients. That means none of the models is far off from the rest. 
+This project uses five regression model to determine the best fit model for the Credit dataset. Based on the result, the OLS perform the best among all the models. The second best is the lasso regression. However, the MSE among all models are very similar and they shared similar coefficients. That means none of the models is far off from the rest. 
 
 #Credit
 An Introduction to Statistical Learning: With Applications in R. New York: Springer, 2013. Print.
