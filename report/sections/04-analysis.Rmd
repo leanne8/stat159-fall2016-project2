@@ -1,0 +1,54 @@
+---
+title: "04-analysis"
+output: pdf_document
+---
+#Analysis
+
+```{r}
+library(xtable)
+library(readr)
+library(Matrix)
+load('../../data/ols.RData')
+load('../../data/ridge.RData')
+load('../../data/lasso.RData')
+load('../../data/pcr.RData')
+load('../../data/plsr.RData')
+```
+
+## OLS
+```{r,echo=FALSE,results='asis'}
+olsTable <- xtable(olsSum$coefficients)
+print(olsTable, comment=FALSE, type = "latex")
+# OLS MSE
+olsMSE
+```
+
+The ordinary least squares regression MSE is 0.044683. 
+
+## Ridge 
+
+```{r,echo=FALSE,results='asis'}
+ridgeTable = as.matrix(ridgeFitcoef)
+print(xtable(ridgeTable), comment = FALSE,type = 'latex')
+```
+
+## Lasso 
+
+```{r,echo=FALSE,results='asis'}
+lassoTable = as.matrix(LassoFitcoef)
+print(xtable(ridgeTable), comment = FALSE,type = 'latex')
+```
+
+## Principal Components Regression
+
+```{r,echo=FALSE,results='asis'}
+pcrTable = as.matrix(pcrFitCoef)
+print(xtable(pcrTable), comment = FALSE,type = 'latex')
+```
+
+## Partial Least Squares Regression
+
+```{r,echo=FALSE,results='asis'}
+plsrTable = as.matrix(plsrFitCoef)
+print(xtable(plsrTable), comment = FALSE,type = 'latex')
+```
