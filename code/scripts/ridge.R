@@ -1,5 +1,6 @@
 #install.packages("glmnet")
 library(glmnet)
+library(methods)
 
 #Load data 
 scaledCredit = as.matrix(read.csv("data/scaled-credit.csv"))[,-1]

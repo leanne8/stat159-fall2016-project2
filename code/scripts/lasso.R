@@ -1,4 +1,6 @@
 library(glmnet)
+library(methods)
+
 
 scaledCredit = as.matrix(read.csv("data/scaled-credit.csv"))[,-1]
 trainSet = as.matrix(read.csv("data/train-set.csv"))[,-1]
