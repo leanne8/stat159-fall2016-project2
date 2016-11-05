@@ -40,8 +40,8 @@ regression:
 
 #Generate pdf report
 report: report/sections/*.Rmd
-	cat report/sections/*.Rmd > report.Rmd; 
-	Rscript -e "library(rmarkdown); render('report.Rmd','pdf_document')";
+	cd report; cat sections/*.Rmd > report.Rmd; 
+	Rscript -e "library(rmarkdown); render('report/report.Rmd','pdf_document')";
 
 #slides:
 slides: slides/slides.Rmd
