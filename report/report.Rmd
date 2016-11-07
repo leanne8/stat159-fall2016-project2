@@ -120,6 +120,7 @@ plsrMSE
 The PLSR MSE is 0.0517916.
 The PLSR coefficients have some difference from PCR. When comparing with second and third components, PCR and PLSR have different results. The majority others remains the same. 
 
+#Results
 
 From the analysis, we can see that the MSE are similar to each other. The OLS has the smallest MSE, which is the best fit model for the credit data set. The ridge regression has the largest MSE among the five regression, which is the least efficient model. From the tables above, most of the coefficients are similar except for PLSR. 
 
